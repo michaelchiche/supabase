@@ -5,6 +5,7 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
+    "test": "jest",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -19,10 +20,12 @@
     "reactflow": "*",
     "tsconfig": "*",
     "ui": "*",
-	"valtio": "*"
+    "valtio": "*"
   },
   "devDependencies": {
-    "api-types": "*"
+    "api-types": "*",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2"
   },
   "peerDependencies": {
     "next": "*",
