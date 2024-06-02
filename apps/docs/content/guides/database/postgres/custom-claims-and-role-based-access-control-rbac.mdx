@@ -93,7 +93,7 @@ as $$
     claims jsonb;
     user_role public.app_role;
   begin
-    -- Check if the user is marked as admin in the profiles table
+    -- Fettch the user role in the profiles table
     select role into user_role from public.user_roles where user_id = (event->>'user_id')::uuid;
 
     claims := event->'claims';
